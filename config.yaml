@@ -1,0 +1,151 @@
+### 3. config.yaml
+```yaml
+# Словарь категорий навыков
+skill_categories = {
+  Programming Languages: [
+        "Python", "Java", "C++", "C#", "JavaScript", "TypeScript", "PHP", "Go",
+        "Ruby", "Swift", "Kotlin", "Rust", "Scala", "Perl"
+    ],
+    "Web Frameworks": [
+        "HTML", "CSS", "JavaScript", "React", "Angular", "Vue.js", "Django", "Flask",
+        "Spring", ".NET Core", "Laravel", "Express", "Node.js", "Next.js", "Nuxt.js", "Svelte"
+    ],
+    "Databases": [
+        "SQL", "MySQL", "PostgreSQL", "SQLite", "Oracle",
+        "MongoDB", "Redis", "Cassandra", "Firebase", "MariaDB"
+    ],
+    "Version Control & DevOps": [
+        "Git", "GitHub", "GitLab", "SVN",
+        "Docker", "Kubernetes", "Jenkins", "CI/CD",
+        "Bash", "Linux", "GitHub Actions", "Azure DevOps"
+    ],
+    "Cloud Platforms": [
+        "AWS", "Azure", "Google Cloud", "Heroku", "DigitalOcean", "Yandex.Cloud"
+    ],
+    "Data & ML": [
+        "Pandas", "NumPy", "TensorFlow", "PyTorch", "Scikit-learn", "Jupyter",
+        "Keras", "OpenCV", "NLTK", "SpaCy"
+    ],
+    "IT Practices": [
+        "OOP", "REST API", "Microservices", "Agile", "Scrum", "Kanban", "TDD",
+        "Unit Testing", "BDD", "CI/CD"
+    ],
+    "Action Verbs": [
+        # — Разработка и дизайн —
+        "Developed",              "Разработал",           "Разработала",           "Разрабатывал",
+        "Designed",               "Спроектировал",        "Спроектировала",        "Проектировал",
+        "Implemented",            "Внедрил",              "Внедрила",              "Внедрял",
+        "Architected",            "Спроектировал архитектуру",
+
+        # — Кодирование и отладка —
+        "Coded",                  "Закодировал",          "Кодировал",
+        "Programmed",             "Запрограммировал",     "Программировал",
+        "Debugged",               "Отладил",              "Отлаживал",
+        "Fixed bugs",             "Исправил ошибки",
+
+        # — Тестирование —
+        "Tested",                 "Протестировал",        "Тестировал",
+        "Validated",              "Валидировал",
+
+        # — Деплой и развёртывание —
+        "Deployed",               "Развернул",            "Развертывал",
+        "Released",               "Выпустил",             "Релизнул",
+        "Configured",             "Настроил",             "Настраивал",
+
+        # — Интеграция и миграция —
+        "Integrated",             "Интегрировал",         "Интегрировала",
+        "Migrated",               "Мигрировал",           "Мигрировала",
+
+        # — Работа с базой данных —
+        "Populated database",     "Пополнил базу",        "Пополнила базу",
+        "Optimized queries",      "Оптимизировал запросы",
+        "Designed schema",        "Спроектировал схему БД",
+        "Maintained database",    "Поддерживал базу данных",
+
+        # — Анализ и сбор данных —
+        "Analyzed data",          "Проанализировал данные", "Проанализировала данные",
+        "Collected data",         "Собрал данные",        "Собрала данные",
+
+        # — Оптимизация и рефакторинг —
+        "Optimized",              "Оптимизировал",        "Оптимизировала",
+        "Refactored",             "Рефакторил",           "Рефакторила",
+
+        # — Документирование —
+        "Documented",             "Задокументировал",     "Задокументировала",
+        "Wrote documentation",    "Написал документацию", "Написала документацию",
+
+        # — Управление и координация —
+        "Managed",                "Управлял",             "Управляла",
+        "Coordinated",            "Координировал",        "Координировала",
+        "Led",                    "Вёл проект",           "Вела проект",
+
+        # — Поддержка и сопровождение —
+        "Maintained",             "Поддерживал",          "Поддерживала",
+        "Supported",              "Сопровождал",          "Сопровождала"
+    ],
+    "Soft Skills": [
+        # — Communication —
+        "Communication",                 "Коммуникация",                  "Общение",
+        "Communicative",                 "Communicative skills",          "Коммуникативный",
+        "Коммуникабельный",
+
+        # — Teamwork —
+        "Teamwork",                      "Team Work",                     "Работа в команде",
+        "Командная работа",              "Team-oriented",                 "Team oriented",
+        "Командный",                     "Командный игрок",
+
+        # — Problem Solving —
+        "Problem Solving",               "Решение проблем",               "Навыки решения проблем",
+        "Problem-solving",               "Проблемно-ориентированный",
+
+        # — Critical Thinking —
+        "Critical Thinking",             "Критическое мышление",          "Critical-thinking",
+        "Критически мыслящий",
+
+        # — Adaptability —
+        "Adaptability",                  "Адаптивность",                  "Гибкость",
+        "Adaptable",                     "Адаптивный",                    "Гибкий",
+
+        # — Self-Learning —
+        "Self-Learning",                 "Самообучение",                  "Способность к самообучению",
+        "Self-learning",                 "Самообучающийся",
+
+        # — Time Management —
+        "Time Management",               "Тайм-менеджмент",               "Управление временем",
+        "Time-management",               "Организованный",               "Умеющий планировать время",
+
+        # — Creativity —
+        "Creativity",                    "Креативность",                  "Creative",
+        "Креативный",
+
+        # — Collaboration —
+        "Collaboration",                 "Сотрудничество",                "Коллаборация",
+        "Collaborative",                 "Сотрудничающий",               "Коллаборативный",
+
+        # — Emotional Intelligence —
+        "Emotional Intelligence",        "Эмоциональный интеллект",       "EQ",
+        "Emotionally intelligent",       "Эмоционально интеллигентный",  "Эмоционально интеллектуальный",
+
+        # — Resilience —
+        "Resilience",                    "Устойчивость",                  "Стрессоустойчивость",
+        "Resilient",                     "Устойчивый",                    "Стойкий",
+
+        # — Growth Mindset —
+        "Growth Mindset",                "Установка на рост",             "Ориентированный на рост",
+        "Growth-minded",                 "Рост-ориентированный",
+
+        # — Remote Work —
+        "Remote Work",                   "Удалённая работа",              "Дистанционная работа",
+        "Remote-working",                "Удалённо работающий",           "Работа на удалёнке",
+
+        # — Digital Literacy —
+        "Digital Literacy",              "Цифровая грамотность",          "Digitally literate",
+        "Грамотный в цифровых технологиях", "Цифрово грамотный"
+    ]
+}
+
+# Веса для итогового score
+weights:
+  kw: 0.5
+  skills: 0.2
+  errors: 0.3
