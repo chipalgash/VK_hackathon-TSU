@@ -62,7 +62,7 @@ def main():
     print(f"Score: {report['score']}/100")
     print("Keywords found:", report['keywords']['found'])
     print("Keywords missing:", report['keywords']['missing'])
-    print("Skills found:", report['keywords']['found_skills'])
+    print("Skills found:", report['skills']['found'])
     print("Spelling errors:", len(report['errors']['spelling']))
     print("Grammar errors:", len(report['errors']['grammar']))
 
