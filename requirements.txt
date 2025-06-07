@@ -1,0 +1,5 @@
+pyaspeller
+language-tool-python
+python-docx
+PyPDF2
+PyYAML
